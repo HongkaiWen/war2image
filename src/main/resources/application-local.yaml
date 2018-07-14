@@ -1,0 +1,3 @@
+env:
+  env-name: test
+  db-ip: 10.2.3.4

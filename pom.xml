@@ -60,4 +60,28 @@
         </plugins>
     </build>
 
+    <profiles>
+
+        <!--****** 本地开发  ****** -->
+        <profile>
+            <id>local</id>
+            <properties>
+                <env.flag>local</env.flag>
+            </properties>
+
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+
+        <!--****** 容器部署  ****** -->
+        <profile>
+            <id>container</id>
+            <properties>
+                <env.flag>container</env.flag>
+            </properties>
+        </profile>
+    </profiles>
+
+
 </project>

@@ -1,4 +1,4 @@
-env:
-  db-ip: 1.1.2.3
-  env-name: hello
+spring:
+  profiles:
+    active: @env.flag@
 
